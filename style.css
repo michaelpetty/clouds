@@ -1,0 +1,155 @@
+/* Волк и луна:
+Коды вверху тёмный внизу светлый
+
+Темный фон:
+050b2d
+021281
+
+Облака
+011550
+0752c7
+
+Кольца вокруг луны
+005bba
+1783dd
+
+Луна
+ffffff */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #050b2d;
+  position: relative;
+}
+
+body,
+#central-container,
+#clouds,
+#base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#central-container {
+  width: 600px;
+  height: 800px;
+}
+
+#moon {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* CLOUDS */
+
+/* FRONT CLOUDS */
+
+#clouds, #base, #gradient {
+  width: 100%;
+  height: 100%;
+}
+
+#base {
+  position: relative;
+  flex-direction: row;
+}
+
+#gradient {
+  background: rgb(7,82,199);
+  background: -moz-radial-gradient(circle, rgba(7,82,199,1) 0%, rgba(1,21,80,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(7,82,199,1) 0%, rgba(1,21,80,1) 100%);
+  background: radial-gradient(circle, rgba(7,82,199,1) 0%, rgba(1,21,80,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0752c7",endColorstr="#011550", GradientType=1);
+  background-clip: border-box;
+}
+
+#base-layer-1 {
+  position: absolute;
+  height:250px;
+  width:500px;
+  border-radius: 0 0 500px 500px;
+  background: #081d5a;
+}
+
+#base-cloud-1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #081d5a;
+  top: 230px;
+  left: 50px;
+}
+
+#base-cloud-2 {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #081d5a;
+  top: 200px;
+  left: 120px;
+}
+
+#base-cloud-3 {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: #081d5a;
+  top: 215px;
+  left: 180px;
+}
+
+#base-cloud-4 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #081d5a;
+  top: 230px;
+  right: 260px;
+}
+
+#base-cloud-5 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #081d5a;
+  top: 210px;
+  right: 180px;
+}
+
+#base-cloud-6 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #081d5a;
+  top: 230px;
+  right: 110px;
+}
+
+#base-cloud-7 {
+  position: absolute;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  background-color: #081d5a;
+  top: 215px;
+  right: 50px;
+}
