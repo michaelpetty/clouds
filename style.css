@@ -67,16 +67,10 @@ body,
   flex-direction: row;
 }
 
-#gradient {
-  background: rgb(7,82,199);
-  background: -moz-radial-gradient(circle, rgba(7,82,199,1) 0%, rgba(1,21,80,1) 100%);
-  background: -webkit-radial-gradient(circle, rgba(7,82,199,1) 0%, rgba(1,21,80,1) 100%);
-  background: radial-gradient(circle, rgba(7,82,199,1) 0%, rgba(1,21,80,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0752c7",endColorstr="#011550", GradientType=1);
-  background-clip: border-box;
+.base-cloud {
+  position: relative;
 }
-
-#base-layer-1 {
+#base-layer-1, .base-layer-1 {
   position: absolute;
   height:250px;
   width:500px;
@@ -84,7 +78,7 @@ body,
   background: #081d5a;
 }
 
-#base-cloud-1 {
+#base-cloud-1, .base-cloud-1 {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -94,7 +88,7 @@ body,
   left: 50px;
 }
 
-#base-cloud-2 {
+#base-cloud-2, .base-cloud-2 {
   position: absolute;
   width: 110px;
   height: 110px;
@@ -104,7 +98,7 @@ body,
   left: 120px;
 }
 
-#base-cloud-3 {
+#base-cloud-3, .base-cloud-3 {
   position: absolute;
   width: 105px;
   height: 105px;
@@ -114,7 +108,7 @@ body,
   left: 180px;
 }
 
-#base-cloud-4 {
+#base-cloud-4, .base-cloud-4 {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -124,7 +118,7 @@ body,
   right: 260px;
 }
 
-#base-cloud-5 {
+#base-cloud-5, .base-cloud-5 {
   position: absolute;
   width: 120px;
   height: 120px;
@@ -134,7 +128,7 @@ body,
   right: 180px;
 }
 
-#base-cloud-6 {
+#base-cloud-6, .base-cloud-6 {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -144,7 +138,7 @@ body,
   right: 110px;
 }
 
-#base-cloud-7 {
+#base-cloud-7, .base-cloud-7 {
   position: absolute;
   width: 105px;
   height: 105px;
@@ -152,4 +146,12 @@ body,
   background-color: #081d5a;
   top: 215px;
   right: 50px;
+}
+#gradient, .gradient {
+  background: rgb(7,82,199);
+  background: -moz-radial-gradient(circle, rgba(7,82,199,1) 0%, rgba(1,21,80,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(7,82,199,1) 0%, rgba(1,21,80,1) 100%);
+  background: radial-gradient(circle, rgba(7,82,199,1) 0%, rgba(1,21,80,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0752c7",endColorstr="#011550", GradientType=1);
+  background-clip: border-box;
 }
